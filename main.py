@@ -188,7 +188,7 @@ def main():
     ques1=input("Are you new here (yes/no):")
     if ques1.lower()=="yes":
         register()
-    elif ques.lower()=="no":
+    elif ques1.lower()=="no":
         login()
     else:
         print("No options are available.")
@@ -212,4 +212,5 @@ if __name__=="__main__":
     points=0
     no_wins=0
     no_loss=0
+
     main()
