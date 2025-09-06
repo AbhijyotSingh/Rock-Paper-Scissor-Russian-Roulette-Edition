@@ -9,6 +9,7 @@ def slow_type(message):
     print("\n")
         
 def register():
+    global points,health,no_wins,no_loss,name
     cur.execute("SELECT name_user from data_rps")
     names=[i[0] for i in cur.fetchall()]
     name=input("Enter your name:")
@@ -42,6 +43,7 @@ def show_rules():
     slow_type(message1)
 
 def rps_rr():
+    global points,health,no_wins,no_loss,name
     data=view()
     m1="This is your saved file."
     slow_type(m1)
@@ -214,3 +216,4 @@ if __name__=="__main__":
     no_loss=0
 
     main()
+
